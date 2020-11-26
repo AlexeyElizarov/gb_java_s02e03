@@ -12,6 +12,8 @@ public class Main {
         doExercise2();
     }
 
+    // check
+
     static void doExercise2() {
         PhoneBook phonebook = new PhoneBook();
         phonebook.add("Ivanov", "45677");
