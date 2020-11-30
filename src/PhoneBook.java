@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 2. Написать простой класс ТелефонныйСправочник, который хранит в себе список фамилий и телефонных номеров.
@@ -26,8 +23,7 @@ public class PhoneBook {
         directory.put(name, phones);
     }
 
-    public Set<String> get(String name){
-        return directory.get(name);
+    public Set<String> get(String name) {
+        return directory.getOrDefault(name, Collections.emptySet());
     }
-
 }
